@@ -186,6 +186,66 @@ and trusted over time.
 
 ---
 
+## SCODA and Canonical Servers
+
+SCODA does not argue against servers.
+On the contrary, **servers remain the most practical way**
+to provide search, exploration, and user interfaces.
+
+The distinction lies in roles.
+
+### Canonical Servers
+
+A canonical server typically provides:
+- A continuously updated, recommended view of the data
+- Query and filtering capabilities
+- Web and API-based access
+
+For many users, this is the primary interaction point.
+
+However, servers inherently emphasize the *present*.
+Even when versioned views are offered,
+the server remains an active, mutable system
+whose availability and behavior must be trusted.
+
+---
+
+### SCODA Releases
+
+SCODA complements servers by introducing
+a second, equally important unit:
+
+- A versioned, immutable release artifact
+- Bound to a specific interpretive view (e.g. a particular *sensu*)
+- Fully usable without server access
+
+In this model:
+- The server represents the **running system**
+- The SCODA artifact represents a **released knowledge state**
+
+---
+
+### A Layered Model
+
+Rather than choosing between server or artifact,
+SCODA encourages a layered approach:
+
+1. **Canonical Server**  
+   Provides the latest recommended view and interactive access
+
+2. **SCODA Releases**  
+   Provide authoritative, citable snapshots of knowledge
+
+3. **Local Overlays**  
+   Allow personal notes, alternative interpretations,
+   or experimental extensions without affecting the canonical record
+
+This separation clarifies responsibility,
+supports reproducibility,
+and avoids overloading servers with archival duties.
+
+---
+
 ## Why SCODA Is Especially Relevant Now
 
 Several recent shifts make SCODA timely:
